@@ -1,0 +1,10 @@
+=== CNN Evaluation Log ===
+Train Rooms: A, B
+Test Room: C
+Total Training Samples: 3936
+Total Testing Samples: 1968
+CNN Model Size: 268.95 KB
+Raw Accuracy: 94.92%
+Post-Processed Accuracy (k=5): 98.68%
+Inference Time (Total): 0.4196 seconds
+Average Inference Time per Sample: 0.000213 seconds

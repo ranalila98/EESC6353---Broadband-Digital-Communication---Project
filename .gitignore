@@ -1,0 +1,32 @@
+# Ignore folders
+
+data/
+preprocessed_data/
+
+
+# Python cache and logs
+__pycache__/
+*.pyc
+*.pyo
+*.log
+
+# MATLAB autosaves, workspaces, and figures
+*.asv
+*.mat
+*.fig
+*.bak
+*.tmp
+*.mex*
+*.p
+
+# macOS and Windows system files
+.DS_Store
+Thumbs.db
+
+# VS Code and other editor-specific files
+.vscode/
+*.swp
+
+# Environment and config files
+.env
+*.iml

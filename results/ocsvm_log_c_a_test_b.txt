@@ -1,0 +1,23 @@
+=== OC-SVM Evaluation Log ===
+Train Rooms: C, A
+Test Room: B
+Total Training Samples: 1968
+Total Testing Samples: 1968
+OC-SVM Model Size (Support Vectors): 6575.62 KB
+Raw Accuracy: 88.41%
+Post-Processed Accuracy (k=5): 89.99%
+Inference Time (Total): 0.2018 seconds
+Average Inference Time per Sample: 0.000103 seconds
+
+--- Detailed Metrics ---
+Before Post-Processing:
+  Accuracy : 88.41%
+  Precision: 81.50%
+  Recall   : 99.39%
+  F1 Score : 89.56%
+
+After Post-Processing:
+  Accuracy : 89.99%
+  Precision: 83.72%
+  Recall   : 99.29%
+  F1 Score : 90.84%
