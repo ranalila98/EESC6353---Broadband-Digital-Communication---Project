@@ -5,6 +5,6 @@ Total Training Samples: 3936
 Total Testing Samples: 1968
 CNN Model Size: 268.95 KB
 Raw Accuracy: 93.19%
-Post-Processed Accuracy (k=5): 97.92%
-Inference Time (Total): 0.5269 seconds
-Average Inference Time per Sample: 0.000268 seconds
+Post-Processed Accuracy (k=7): 98.32%
+Inference Time (Total): 0.4348 seconds
+Average Inference Time per Sample: 0.000221 seconds

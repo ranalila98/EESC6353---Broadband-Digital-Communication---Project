@@ -7,7 +7,7 @@ all_rooms = {'a', 'b', 'c'};
 channels = {'channel_1', 'channel_36'};
 classes = {'empty', 'occupied'};
 base_folder = 'preprocessed_data';
-k = 5;
+k = 7;
 
 fprintf('Available rooms: a, b, c\n');
 train_room1 = input('Enter first training room (e.g., a): ', 's');
@@ -101,8 +101,8 @@ analyzeNetwork(net);
 % totalParams = sum(arrayfun(@(l) numel(l.Weights) + numel(l.Bias), net.Layers, 'UniformOutput', true));
 % cnn_size = totalParams * 4 / 1024;
 % fprintf('CNN size: %.2f KB\n', cnn_size);
-
-
+% view(net)
+% deepNetworkDesigner(net)
 
 % Save training progress figure
 if ~exist('plots', 'dir')
@@ -162,8 +162,6 @@ tic;
 Y_pred = classify(net, X_test);
 
 
-
-
 % === Majority Voting ===
 Y_pred_post = Y_pred;
 for j = k:length(Y_pred)
@@ -191,7 +189,6 @@ disp(array2table(cm_raw_pct, 'VariableNames', cellstr(order), 'RowNames', cellst
 
 fprintf('Post-Processed Accuracy (k = %d): %.2f%%\n', k, acc_post * 100);
 disp(array2table(cm_post_pct, 'VariableNames', cellstr(order), 'RowNames', cellstr(order)));
-
 
 
 % --- Plot and Save Confusion Matrices ---

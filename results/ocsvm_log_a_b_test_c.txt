@@ -6,8 +6,8 @@ Total Testing Samples: 1968
 OC-SVM Model Size (Support Vectors): 6555.94 KB
 Raw Accuracy: 86.69%
 Post-Processed Accuracy (k=5): 89.13%
-Inference Time (Total): 0.2285 seconds
-Average Inference Time per Sample: 0.000116 seconds
+Inference Time (Total): 0.5213 seconds
+Average Inference Time per Sample: 0.000265 seconds
 
 --- Detailed Metrics ---
 Before Post-Processing:

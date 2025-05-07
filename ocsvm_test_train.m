@@ -119,18 +119,6 @@ metrics = @(cm) struct( ...
 scores_raw = metrics(cm_raw);
 scores_post = metrics(cm_post);
 
-
-
-
-
-
-
-
-
-
-
-
-
 %% --- PCA & OC-SVM Decision Boundary Visualization ---
 [coeff, score_train] = pca(X_train);
 X_train_pca = score_train(:, 1:2);
@@ -232,8 +220,6 @@ set(gcf, 'Position', [100, 100, 700, 500]);
 saveas(gcf, fullfile(results_folder, ...
     sprintf('ocsvm_metrics_%s_%s_test_%s.png', ...
     train_rooms{1}, train_rooms{2}, test_room{1})));
-
-
 
 %% --- Log file ---
 % Estimate model size (in KB)
